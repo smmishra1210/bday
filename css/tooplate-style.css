@@ -180,6 +180,7 @@ b, strong {
 .navbar[class*="-pinned"] {
   transform: translate(0, 0);
 }
+
 .navbar[class*="headroom--not-top"] {
   background: #ffffff;
   border-bottom: 1px solid #f0f0f0;
@@ -196,6 +197,7 @@ b, strong {
 }
 
 .nav-link {
+  
   font-weight: bold;
   font-size: 16px;
   overflow: hidden;
@@ -291,17 +293,20 @@ b, strong {
 
 .dark-mode {
   background: #0c0c0d;
+  /* background: #a3e014; */
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(250, 246, 246, 0.8);
+  /* background-color: #0e355a; */
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #ffc200;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
-  background: #0c0c0d;
+  background: #0e355a;
   border-bottom: 1px solid #1f1f1f;
 }
+
 .dark-mode .small-text {
   background: #0d0c15;
   color: #ffffff;
@@ -311,6 +316,11 @@ b, strong {
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
 .dark-mode .color-mode {
   color: #ffffff;
+}
+.dark-mode .color-mode{
+  color: rgb(237, 243, 243);
+  background-color: #0e355a;
+
 }
 .dark-mode .owl-carousel .owl-nav button.owl-next,
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
@@ -383,11 +393,11 @@ b, strong {
 }
 .owl-carousel .owl-nav .owl-prev:before {
   content: '\e833';
-  left: -45px;
+  left: -5rem;
 }
 .owl-carousel .owl-nav .owl-next:before {
   content: '\e836';
-  right: -45px;
+  right: -5rem;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
@@ -468,7 +478,7 @@ b, strong {
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
-    bottom: 50px;
+    bottom: 1rem;
   }
 }
 @media (max-width: 991px) {
@@ -476,8 +486,12 @@ b, strong {
     padding-bottom: 4rem;
   }
 
+  .dark-mode .navbar-light .navbar-nav .nav-link {
+    color: rgba(250, 246, 246, 0.8);
+    background-color: #0e355a;
+  }
   .color-mode {
-    display: none;
+   
   }
 
   .about-image {
@@ -509,7 +523,7 @@ b, strong {
   .navbar-collapse {
     background: #ffffff;
     text-align: center;
-    padding-bottom: 20px;
+    /* padding-bottom: 1px; */
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
